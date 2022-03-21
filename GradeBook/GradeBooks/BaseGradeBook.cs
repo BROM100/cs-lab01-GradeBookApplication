@@ -9,7 +9,7 @@ using Newtonsoft.Json.Linq;
 
 namespace GradeBook.GradeBooks
 {
-    public class BaseGradeBook
+    public  abstract class BaseGradeBook
     {
         public string Name { get; set; }
         public GradeBookType Type { get; set; }
@@ -108,6 +108,10 @@ namespace GradeBook.GradeBooks
 
         public virtual double GetGPA(char letterGrade, StudentType studentType)
         {
+            //if (studentType == StudentType.Honors|| studentType ==StudentType.DualEnrolled)
+            //{
+               
+            //}
             switch (letterGrade)
             {
                 case 'A':
