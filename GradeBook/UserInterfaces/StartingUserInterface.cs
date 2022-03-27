@@ -32,7 +32,7 @@ namespace GradeBook.UserInterfaces
         }
         public class BaseGradeBook1 : BaseGradeBook
         {
-            public BaseGradeBook1(string name) : base(name)
+            public BaseGradeBook1(string name) : base(name, true)
             {
             }
         }
